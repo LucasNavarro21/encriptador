@@ -1,0 +1,120 @@
+
+:root{
+    --color-fondo: #070600;
+    --button-glow-color: rgba(255, 255, 255, 0.8); /* Color de la luz */
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.contenedorPadre {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color:var(--color-fondo);
+}
+
+.contenedorEncriptador, .contenedorDesencriptador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contenedorEncriptador{
+    flex-grow: 6;
+    
+}
+
+.contenedorDesencriptador{
+    flex-grow: 1;
+}
+.contenedorInputEncriptar{
+    width: 90%;
+
+}
+.contenedorInputEncriptar input{
+    /* border: none; */
+    text-align: center;
+
+}
+
+.contenedorInputDesencriptar{
+    width: 100%;
+}
+.contenedorInputEncriptar, .contenedorInputDesencriptar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorInputEncriptar input, .contenedorInputDesencriptar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.contenedorInputDesencriptar input{
+    background-color: rgba(53, 72, 59, 0.606);
+    border: none;
+    font-size: 1.5rem;
+}
+
+.contenedorInputEncriptar input{
+    border: none;
+    outline: none;
+    background-color:  transparent;
+    color: white;
+    font-size: 3rem;
+
+}
+
+
+
+
+
+.contenedorBotonesEncriptar, .contenedorDesencriptarBoton {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px 0;
+    width: 90%;
+}
+
+.contenedorBotonesEncriptar button, .contenedorDesencriptarBoton button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1rem;
+    flex-grow: 1;
+    background-color: #747572;
+    border: 2px solid black;
+    color: white;
+    height: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: border-color 1s, box-shadow 0.5s ease-in-out; /* Aplicar la transición a la propiedad correcta */
+}
+
+.contenedorBotonesEncriptar button:hover, .contenedorDesencriptarBoton button:hover{
+    border: 2px solid white;
+    box-shadow: 0 0 15px var(--button-glow-color); /* Efecto de luz */
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
