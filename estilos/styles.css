@@ -71,6 +71,35 @@ body, html {
     font-size: 1.5rem;
 }
 
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenInputVacio{
+    height: 15rem;
+}
+
+.textoContenedorVacio p{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    /* font-size: 1.2rem; */
+    margin: 0.6rem;
+    text-align: center;
+}
+
+.textoContenedorVacio p:first-of-type {
+    /* color: red;
+    font-weight: bold; */
+    font-size: 2rem;
+}
+
+.textoContenedorVacio p:nth-of-type(2) {
+    /* color: red;
+    font-weight: bold; */
+    font-size: 1.1rem;
+}
 .contenedorInputEncriptar input{
     border: none;
     outline: none;
@@ -117,4 +146,37 @@ footer {
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .contenedorPadre{
+        flex-direction: column;
+    }
+
+    .contenedorInputDesencriptar input {
+        width: 75%;
+    }
+
+    .imagenInputVacio{
+        height: 10rem;
+    }
+
+    .contenedorBotonesEncriptar button, .contenedorDesencriptarBoton button{
+        font-size: 14px;
+        height: 3.4rem;
+        flex-grow: 0.3;
+    }
+
+    .textoContenedorVacio p:first-of-type {
+        /* color: red;
+        font-weight: bold; */
+        font-size: 1.8rem;
+    }
+    
+    .textoContenedorVacio p:nth-of-type(2) {
+        /* color: red;
+        font-weight: bold; */
+        font-size: 1rem;
+    }
 }

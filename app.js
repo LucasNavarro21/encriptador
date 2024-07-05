@@ -15,6 +15,8 @@ function procesoPalabra(){
     cadena = obtenerTexto().split(" ");
     let cadenaEncriptada = encriptado(cadena);
     console.log(cadenaEncriptada);
+    mostrarInput();
+    aplicarEstilos();
     document.querySelector(".contenedorInputDesencriptar input").value = cadenaEncriptada;
 }
 
@@ -100,16 +102,51 @@ function desencriptado(cadena){
     return cadenaEncriptada.trim();
 }
 
-// for (let i = 10; i > 0; i--) {
-//     // const element = array[i];
-//     console.log(i);    
+function vacio(){
+    let contenedorDesencriptado = document.querySelector(".contenedorDesencriptador");
+    let campo = document.querySelector(".contenedorInputDesencriptar input");
+    if(campo.value == ""){
+        console.log("no hay nada");
+        contenedorDesencriptado.innerHTML = `
+                        <div class="contenedorImagen">
+                <img class ="imagenInputVacio" src="https://cdn-icons-png.flaticon.com/256/11234/11234339.png" alt="">
+            </div>
+            <div class="textoContenedorVacio">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        `;
+    }
+}
+function mostrarInput(){
+    let contenedorDesencriptado = document.querySelector(".contenedorDesencriptador");
+    contenedorDesencriptado.innerHTML = `
+     <div class="contenedorInputDesencriptar">
+                <input type="text">
+            </div>
+            <div class="contenedorDesencriptarBoton">
+                <button onclick="copiar()">Copiar</button>
+            </div>
+    `
+}
+vacio();
+
+// let saludo = "hola"
+// for (let i = saludo.length - 1; i >= 0; i--) {
+
+//         console.log(saludo[i]);
+    
 // }
 
-let saludo = "hola"
-for (let i = saludo.length - 1; i >= 0; i--) {
 
-        console.log(saludo[i]);
-    
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+function aplicarEstilos(){
+    let contenedorEncriptador = document.querySelector(".contenedorEncriptador");
+
+    if(mediaQuery.matches){
+        contenedorEncriptador.style.flexGrow = 1.3;
+    }
 }
 
 
