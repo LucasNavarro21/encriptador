@@ -43,6 +43,8 @@ body, html {
 .contenedorInputEncriptar input{
     /* border: none; */
     text-align: center;
+    /* text-transform: lowercase; */
+
 
 }
 
@@ -188,6 +190,10 @@ footer {
     }
     .contenedorBotonesEncriptar, .contenedorDesencriptarBoton{
         flex-direction: column;
+    }
+
+    .contenedorEncriptador, .contenedorDesencriptador{
+        padding: 0;
     }
 }
 
