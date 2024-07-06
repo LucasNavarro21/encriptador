@@ -57,11 +57,14 @@ function encriptado(){
 
 function desencriptado(){
     cadena = obtenerTexto();
-    let cadenaDesencriptada = procesoDesencriptado(cadena);
-    // console.log(procesoDesencriptado(cadena)); 
-    mostrarInput();
-    aplicarEstilos();
-    document.querySelector(".contenedorInputDesencriptar input").value = cadenaDesencriptada;
+    if(validarEscritura(cadena)){
+        let cadenaDesencriptada = procesoDesencriptado(cadena);
+        // console.log(procesoDesencriptado(cadena)); 
+        mostrarInput();
+        aplicarEstilos();
+        document.querySelector(".contenedorInputDesencriptar input").value = cadenaDesencriptada;
+    }
+
 }
 
 
