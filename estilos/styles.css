@@ -69,6 +69,7 @@ body, html {
     background-color: rgba(53, 72, 59, 0.606);
     border: none;
     font-size: 1.5rem;
+    /* width: 89%; */
 }
 
 .contenedorImagen{
@@ -180,3 +181,13 @@ footer {
         font-size: 1rem;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .contenedorInputDesencriptar input{
+        width: 92%;
+    }
+    .contenedorBotonesEncriptar, .contenedorDesencriptarBoton{
+        flex-direction: column;
+    }
+}
+
