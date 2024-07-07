@@ -1,21 +1,7 @@
-// 1-obtengo el texto
-// 2-lo separo con split
-// 3-lo encripto recorriendo cada parte del split
-// 4-lo uno en un cadena
-
-
-let cadenaEncriptada = "";
-let cadenaDesencriptada = ""
 function obtenerTexto(){
     texto = document.querySelector(".inputEncriptar").value;
-    // if(texto == ""){
-    //     return alert("Ingrese texto");
-    // }else{
-    //     return texto;
-    // }
     return texto;
 }
-
 
 let input = document.querySelector(".contenedorInputEncriptar input");
 
@@ -40,11 +26,9 @@ function validarEscritura(texto){
         console.log("hola");
         return texto;
     }
-
 }
 function encriptado(){
     let cadena = obtenerTexto();
-
     if(validarEscritura(cadena)){
         cadena = obtenerTexto().split(" ");
         let cadenaEncriptada = procesoEncriptacion(cadena);
@@ -64,9 +48,7 @@ function desencriptado(){
         aplicarEstilos();
         document.querySelector(".contenedorInputDesencriptar input").value = cadenaDesencriptada;
     }
-
 }
-
 
 function convertirLetra(palabra){
 
@@ -106,9 +88,7 @@ function copiar(){
    document.querySelector(".contenedorInputEncriptar input").value = inputEncriptado; 
 
 }
-// cadena = texto.split(" ");
-// console.log(cadena);
-// console.log(convertirLetra("a")); 
+
 function procesoEncriptacion(cadena){
     cadenaEncriptada = ""; // Resetear la cadena encriptada antes de empezar
     for (let i = 0; i < cadena.length; i++) {
@@ -124,12 +104,10 @@ function procesoEncriptacion(cadena){
     return cadenaEncriptada.trim();
 }
 
-
 function vacio(){
     let contenedorDesencriptado = document.querySelector(".contenedorDesencriptador");
     let campo = document.querySelector(".contenedorInputDesencriptar input");
     if(campo.value == ""){
-        // console.log("no hay nada");
         contenedorDesencriptado.innerHTML = `
                         <div class="contenedorImagen">
                 <img class ="imagenInputVacio" src="https://cdn-icons-png.flaticon.com/256/11234/11234339.png" alt="">
@@ -154,17 +132,9 @@ function mostrarInput(){
 }
 vacio();
 
-// let saludo = "hola"
-// for (let i = saludo.length - 1; i >= 0; i--) {
-
-//         console.log(saludo[i]);
-    
-// }
-
-
-const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 function aplicarEstilos(){
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
     let contenedorEncriptador = document.querySelector(".contenedorEncriptador");
 
     if(mediaQuery.matches){

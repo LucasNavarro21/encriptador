@@ -7,33 +7,33 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <div class="contenedorPadre">
-        <div class="contenedorEncriptador">
+    
+    <main class="contenedorPadre">
+        <section class="contenedorEncriptador">
             <div class="contenedorInputEncriptar">
-                <input  class = "inputEncriptar" type="text">
+                <input id="inputEncriptar" class="inputEncriptar" type="text">
             </div>
             <div class="contenedorBotonesEncriptar">
                 <button onclick="encriptado()">Encriptar</button>
                 <button onclick="desencriptado()">Desencriptar</button>
             </div>
-        </div>
+        </section>
 
-        <div class="contenedorDesencriptador">
+        <section class="contenedorDesencriptador">
             <div class="contenedorInputDesencriptar">
-                <input type="text">
+                <label for="inputDesencriptar">Texto Desencriptado:</label>
+                <input id="inputDesencriptar" type="text">
             </div>
             <div class="contenedorDesencriptarBoton">
                 <button onclick="copiar()">Copiar</button>
             </div>
-        </div>
+        </section>
+    </main>
 
-       
+    <footer class = "footer">
+        <p>&copy; 2024 Lucas Navarro. Todos los derechos reservados.</p>
+    </footer>
 
-        <!-- <footer>
-            <div class="footer"></div>
-        </footer> -->
-    </div>
-    <!-- <script src="app2.js"></script> -->
     <script src="app.js"></script>
 </body>
 </html>

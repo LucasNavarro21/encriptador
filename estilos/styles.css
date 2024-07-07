@@ -4,6 +4,15 @@
     --button-glow-color: rgba(255, 255, 255, 0.8); /* Color de la luz */
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 body, html {
     margin: 0;
     padding: 0;
@@ -71,6 +80,8 @@ body, html {
     background-color: rgba(53, 72, 59, 0.606);
     border: none;
     font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
     /* width: 89%; */
 }
 
@@ -109,11 +120,10 @@ body, html {
     background-color:  transparent;
     color: white;
     font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
 
 }
-
-
-
 
 
 .contenedorBotonesEncriptar, .contenedorDesencriptarBoton {
@@ -149,6 +159,24 @@ footer {
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a18;
+    color: white;
+    /* height: 10rem; */
+}
+
+.footer p{
+    font-size: 1rem;
+    /* font-family: 'Rubik', sans-serif; */
+    font-weight: 500;
+    unicode-bidi: isolate;
+    letter-spacing: 1px;
 }
 
 
@@ -159,6 +187,7 @@ footer {
 
     .contenedorInputDesencriptar input {
         width: 75%;
+
     }
 
     .imagenInputVacio{
@@ -184,7 +213,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 430px) {
     .contenedorInputDesencriptar input{
         width: 92%;
     }
