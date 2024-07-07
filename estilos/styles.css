@@ -224,5 +224,10 @@ footer {
     .contenedorEncriptador, .contenedorDesencriptador{
         padding: 0;
     }
+
+    .footer p{
+        font-size: 0.9rem;
+        letter-spacing: 0.2px;
+    }
 }
 
