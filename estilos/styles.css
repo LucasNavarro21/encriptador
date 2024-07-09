@@ -179,6 +179,19 @@ footer {
     letter-spacing: 1px;
 }
 
+.contenedorAviso{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: white;
+    padding-left: 6rem;
+}
+
+.contenedorAviso p{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
 
 @media only screen and (max-width: 768px) {
     .contenedorPadre{
