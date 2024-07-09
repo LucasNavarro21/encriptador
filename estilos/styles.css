@@ -47,8 +47,20 @@ body, html {
 }
 .contenedorInputEncriptar{
     width: 90%;
+    border-radius: 1rem;
+    transition: border-color 1s, box-shadow 0.5s ease-in-out; /* Aplicar la transición a la propiedad correcta */
 
 }
+
+.contenedorInputEncriptar:hover{
+
+    /* transition: border-color 1s, box-shadow 0.5s ease-in-out; Aplicar la transición a la propiedad correcta */
+    /* border: 4px solid green;  */
+    border: 2px solid rgba(53, 72, 59, 0.606);
+    box-shadow: 0 0 55px rgba(53, 72, 59, 0.606); /* Efecto de luz */
+
+}
+
 .contenedorInputEncriptar input{
     /* border: none; */
     text-align: center;
@@ -59,7 +71,15 @@ body, html {
 
 .contenedorInputDesencriptar{
     width: 100%;
+    border-radius: 1rem;
+
 }
+
+.contenedorInputDesencriptar input:hover{
+    border: 2px solid rgba(53, 72, 59, 0.606);
+    box-shadow: 0 0 55px rgba(53, 72, 59, 0.606); 
+}
+
 .contenedorInputEncriptar, .contenedorInputDesencriptar {
     flex-grow: 1;
     display: flex;
@@ -82,6 +102,8 @@ body, html {
     font-size: 1.5rem;
     font-weight: 600;
     font-style: normal;
+    transition: border-color 1s, box-shadow 0.5s ease-in-out; /* Aplicar la transición a la propiedad correcta */
+
     /* width: 89%; */
 }
 

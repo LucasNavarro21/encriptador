@@ -123,7 +123,7 @@ function mostrarInput(){
     let contenedorDesencriptado = document.querySelector(".contenedorDesencriptador");
     contenedorDesencriptado.innerHTML = `
      <div class="contenedorInputDesencriptar">
-                <input type="text">
+                <input type="text" readonly>
             </div>
             <div class="contenedorDesencriptarBoton">
                 <button onclick="copiar()">Copiar</button>
