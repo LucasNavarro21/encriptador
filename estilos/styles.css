@@ -184,12 +184,13 @@ footer {
     justify-content: flex-start;
     width: 100%;
     color: white;
-    padding-left: 6rem;
 }
 
 .contenedorAviso p{
     font-weight: 500;
     letter-spacing: 0.5px;
+    padding-left: 3rem;
+
 }
 
 
